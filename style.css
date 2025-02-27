@@ -152,3 +152,133 @@ Works
     transform:scale(1.2,1.2) ;
     opacity: 0.7;
 }
+
+/*----------------------------------------
+News
+-----------------------------------------*/
+#news dl {
+    display: flex;
+    flex-wrap: warp;
+    border-top: solid 1px #c8c8c8;
+    margin-bottom: 20px;
+}
+
+#news dt {
+    width: 20%;
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+}
+
+#news dd {
+    width: 80%;
+    border-bottom: solid  1px #c8c8c8;
+    padding: 115px;
+}
+/*---------------------------------------
+Contact
+----------------------------------------*/
+#contact p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+#contact dt {
+    width: 15%;
+}
+#contact dd {
+    width: 85%;
+    margin-bottom: 10px;
+}
+#contact dd input,
+#comtact dd textarea {
+    width: 100%;
+    border: solid 1px #c8c8c8;
+    padding: 10px;
+}
+#contact dd textarea {
+    height: 10rem;
+}
+#contact .button {
+    text-align: center;
+}
+#contact .button input {
+    border: solid 1px #24292e;
+    width: 200px;
+    background-color: #24292e;
+    color: #fff;
+    padding: 15px 0;
+    transition: all 0.3s;
+}
+#contact .button input:hover {
+    background: #fff;
+    color: #24292e;
+}
+/*------------------------------------
+SP
+-------------------------------------*/
+/* pcファースト　大きいサイズから小さいサイズへ　*/
+/* 600px より小さいときときのcss適用　*/
+@media  screen and (max-width:600px) {
+    .site-title {
+        margin-top: 20px;
+    }
+    /* ヘッダー　*/
+    #header {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+        line-height: 40px;
+    }
+
+    #header li {
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+
+    #header li img.icon {
+        width: 20px;
+        margin-top: 15px;
+    }
+
+    /* works */
+    #works ul {
+        flex-direction: column;
+    }
+
+    #works ul li {
+        width: 100%;
+    }
+
+    /* news */
+    #news dl {
+        flex-direction: column;
+    }
+
+    #news dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    #news dd {
+        width: 100%;
+        padding-top: 0;
+    }
+    /* contact */
+    #contact dl {
+        flex-direction: column;
+    }
+
+    #contact dt {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #contact dd {
+        width: 100%;
+    }
+}
+
